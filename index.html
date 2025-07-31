@@ -3,15 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock-Paper-Scissors</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Rock Paper Scissors!</h1>
-
-    <label>Weapon:</label>
-    <input id="userInput" placeholder="rock, paper or scissors?">
-    <button id="button" onclick="play()">clash!</button>
-
-    <script src="script.js"></script>
+    <div class="footer">
+        <h1>Rock/Paper/Scissors</h1>
+    </div>
+    <div id="choice-container" class="board">
+        <div class="cont">
+            <img id="himage" src="images/rock.jpg">
+            <h2 class="descriph">Rock</h2>
+        </div>
+        <h1 class="notify">VS</h1>
+        <div class="cont">
+            <img id="cimage" src="images/rock.jpg">
+            <h2 class=" descripc">Rock</h2>
+        </div>
+    </div>
+    <div id="results-container" class="options">
+        <div style="flex-direction: column; align-items: center;">
+            <p id="hScore">Human score: <span>0</span></p>
+            <p id="cScore">Bot score: <span>0</span></p>
+        </div>
+        <div style="gap: 10px;">
+            <button id="rock">rock</button>
+            <button id="paper">paper</button>
+            <button id="scissors">scissor</button>
+        </div>
+        <button id="playBtn">Play!</button>
+    </div>
 </body>
 </html>
